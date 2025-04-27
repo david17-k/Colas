@@ -72,7 +72,7 @@ public class PedidosViewController {
             tipo="Electrodomesticos";
 
         }
-       pedidos=new Pedidos(direccion,nombre,direccion,tipo);
+       pedidos=new Pedidos(direccion,nombre,telefono,tipo);
         entregaPrioritaria(tipo,pedidos);
         limpiar();
     }
