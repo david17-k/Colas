@@ -60,9 +60,12 @@ public class DespacharViewController  {
 
 
     public void entregar(ActionEvent event){
-        envios.pedidosPrioritarios.desencolar();
-        if(envios.pedidosPrioritarios.isEmpty()){
+
+        if(!envios.pedidosPrioritarios.isEmpty()){
+            envios.pedidosPrioritarios.desencolar();
             System.out.println("Todos los pedidos prioritarios despachados");
+
+        }else{
             envios.pedidos.desencolar();
         }
         System.out.println("Producto enviado");
